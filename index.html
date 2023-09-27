@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>INDIAN JUDICIARY</title>
+<link rel="stylesheet" href="css/style.css"/>
+
+<link rel="shortcut icon" href="images/fevicon.jpg"/>
+<style>
+    
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  /* background-color: #04AA6D; */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+/*  */
+.logo {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically within the container */
+}
+
+/* img {
+  max-width: 50%; /* Ensure the image doesn't exceed the container's width */
+*/
+
+p {
+  margin-left: 20px; /* Add some space between the image and text */
+  font-size: 20px;
+}
+.login-container {
+  position: relative;
+  display: inline-block;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: rgb(32,66,158);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.user-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.user-options li {
+  padding: 10px;
+  text-align: center;
+}
+
+.user-options li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.login-container:hover .user-options {
+  display: block;
+}
+.slideshow {
+    display: flex;
+    overflow: hidden;
+}
+
+/* img {
+    width: 50%;
+    display: none;
+}
+*/
+img:first-child {
+    display: block;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+} 
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.heading{
+  text-align: center;
+  /* background-color: #007bff; */
+  margin: 0%;
+}
+.textAbout{
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+
+</style>
+</head>
+
+<body>
+    <section class="main" style="background-image: url(images/hero-bg.png);">
+        
+        <nav style="background-color: rgb(32, 66, 158);">
+            <!-- <a href="#" class="logo">
+                <img src="images/logo.jpeg" width="120px" />
+                <span <h1>="text-align: center;">Digital justice </h1></span>
+            </a> -->
+            
+            <div class="logo">
+              <img src="images/logo.png" width="120px" />
+              <p style="font-size: 30px; color: rgb(180, 105, 105);">Digital justice</p>
+            </div>
+            
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+              <div class="login-container">
+                <button class="login-button">Explore</button>
+                <ul class="user-options">
+                  <li ><a href="monitoring.html">MONITORING</a></li>
+                  <li><a href="https://services.ecourts.gov.in/ecourtindia_v6/">E-COURT</a></li>
+                  <li><a href="community.html">COMMUNITY</a></li>
+
+                  <li><a href="#">CASE INFO</a></li>
+
+                  <!-- Add more user options as needed -->
+                </ul>
+              </div>
+
+              <div class="login-container">
+                <button class="login-button">Act & Rules</button>
+                <ul class="user-options">
+                  <!-- <li ><a href="#">MONITORING</a></li> -->
+                  <!-- <li><a href="https://services.ecourts.gov.in/ecourtindia_v6/">E-COURT</a></li> -->
+                  <li><a href="https://drive.google.com/file/d/1WJ21cJ-zxkxLLq_-5pFRs3qROh16x7Tv/preview">Act-1987</a></li>
+                  <li><a href="https://drive.google.com/file/d/1htOIPZv9QtNheMyx6MKGo3cYkpI6jTLr/view">Rules</a></li>
+                  <li><a href="https://drive.google.com/file/d/1x_UeosdYYxPe_eqmcrL7UnPWlhI2LUbW/view">Regulations</a></li>
+                  <li><a href="https://drive.google.com/file/d/1bavMbGbUBBL4_gVl8y9HsoWRZFPvZ3CS/view">Guidelines</a></li>
+
+
+
+                  <!-- <li><a href="#">COMMUNITY</a></li> -->
+
+                  <!-- Add more user options as needed -->
+                </ul>
+              </div>
+              
+               <li><a href="#about" style=" color: white ;">About</a></li>
+                <li><a href="#" style="color: white;">Notification</a></li>
+
+
+                <div class="login-container">
+                  <button class="login-button">Login</button>
+                  <ul class="user-options">
+                    <li ><a href="form.html">Admin</a></li>
+                    <li><a href="lawyers.html">Lawyers</a></li>
+                    <li><a href="accused.html">Suspects</a></li>
+                    <!-- Add more user options as needed -->
+                  </ul>
+                </div>
+               
+                
+                <!-- <li><a class="active" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li> -->
+                
+            </ul>
+        </nav>
+       
+        <!-- login modal start -->
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="
+            width: 400px;
+        ">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <p style="font-size: 22px;">Student Login </p>
+                <hr>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Register Here</a></span>
+                <span class="psw" style="margin-right: 11px;"><a href="#">Forgot  password?</a></span>
+              </div>
+            </form>
+          </div>
+        <!-- login modal end  -->
+
+
+        <!--main-content-->
+        <div class="home-content">
+            
+            <!--text-->
+            <div class="home-text" >
+                
+                <!-- <h3 style="color: white; letter-spacing: 3px;">Welcome to JLN College</h3> -->
+                <h1 style="color: white;"> Judiciary Portal</h1>
+                <p style="color: white;">The purpose of this Portal is to raise awareness about the challenges faced by undertrial prisoners in India, shedding light on issues like overcrowding and justice system delays.This website educates visitors about technological innovations that can enhance the conditions and processes related to undertrial prisoners. It advocates for policy reforms within the Indian criminal justice system to safeguard the rights and well-being of these prisoners. </p>
+            <!--login-btn-->
+            <a href="#" class="main-login" style="border-radius: 5px;">Register</a>
+            </div>
+            <!--img-->
+            <div class="home-img" style="width: 500px;">
+                <img src="images/hero.png" width="500px" style="text-shadow: 20px 22px;"/>
+                <marquee width="100%" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">Right To Prisoners Under Article 21,An undertrial prisoner is an accused person who is kept in judicial custody during the time their case is being heard in the court.</a>
+                    </marquee>
+                    <marquee width="100%" direction="right" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">section 436-A of the Code of Criminal Procedure, 1973.</a>
+                    </marquee>
+            </div>
+            
+        </div>
+        
+        
+        <div class="arrow"></div>
+        <span class="scroll">Scroll</span>
+    </section>
+    
+    
+    <section class="services">
+        
+       
+        <div class="heading" id="about">
+        <h1>About Us</h1>
+        </div>
+        <div class="container" style="display: flex;">
+         <div class="slideshow">
+          <img src="images/1.JPG" style="display: none; width: 100%;"alt="Image 1">
+          <img src="images/2.jpg" style="display: none; width: 100%;"alt="Image 2">
+          <img src="images/3.jpg" style="display: none; width: 100%;"alt="Image 3">
+          <!-- <img src="images/4.jpeg" style="display: none; width: 100%;"alt="Image 3">  -->
+          <!-- Add more images as needed -->
+        </div>
+          <div class="textAbout">
+            <h1 style="font-size: 24px;"></h1>
+            <p>
+              Undertrial prisoners are individuals who have been arrested but not yet convicted of a crime. They are awaiting trial and presumed innocent until proven guilty. Conditions and rights of undertrial prisoners vary, and challenges such as overcrowding and delays in legal proceedings exist.</p>
+              <p> Reforms aim to expedite trials and improve conditions. Legal professionals play a key role in upholding the rights of undertrial prisoners, ensuring a fair and just legal process.
+                
+              Legal Status: They are considered innocent until proven guilty. <br>
+
+                <b> Detention Reasons:</b> Held for suspicion of a crime, pending investigation, or trial proceedings. <br>
+                
+               <b>Detention Duration:</b>  Varies widely, depending on the case and legal system efficiency. <br>
+                
+               <b>Conditions:</b>  Should be held in humane conditions with access to legal representation and basic amenities. <br>
+                
+                <b>Rights:</b> Have fundamental rights, including a fair and speedy trial, legal representation, and protection against self-incrimination. <br>
+                
+               <b>Overcrowding:</b>  Overcrowding in prisons and court delays are common challenges. <br>
+                
+               <b> Reforms:</b> Many jurisdictions work on legal reforms to expedite court processes and improve conditions.
+                
+                
+              
+
+
+
+
+
+              </p>
+          </div>
+        </div>
+      <script src="script.js"></script>
+
+    </section>
+    
+    <!--footer------------->
+    <footer>
+        <!-- <p>Copyright (C) - 2021 | Developed By <a href="https://kush.lexdigital.in/">Lavkush Kumar </a> </p> -->
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+    <!-- <div class="time"><i class="fa fa-clock-o"></i> <span id="datetime">Sunday, September 24, 2023 10:54:24 PM</span></div> -->
+
+</body>
+
+</html>
